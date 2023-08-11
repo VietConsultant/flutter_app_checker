@@ -4,7 +4,7 @@ import UIKit
 public class AppCheckerPlugin: NSObject, FlutterPlugin {
  public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "app_checker", binaryMessenger: registrar.messenger())
-    let instance = SwiftAppCheckerPlugin()
+    let instance = AppCheckerPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
 
